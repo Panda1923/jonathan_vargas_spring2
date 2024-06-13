@@ -1,0 +1,278 @@
+* {
+  --primary-color: #ff6f6f;
+  --secondary-color: #ffb6b6;
+  --background-color: #ffe0e0;
+  --text-color: #333;
+  --highlight-color: #d93636;
+  --font-family: "Arial", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+header .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  align-self: hover;
+  position: relative;
+  align-self: flex-end;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 2px #f0645a solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px #ce3333;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: var(rgb(163, 151, 151));
+}
+
+main {
+  background-color: #ffe0e0;
+  text-align: center;
+  padding: 80px;
+}
+.main3 {
+  /*module information*/
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 250px;
+}
+.main5 {
+  /*module benefits*/
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content1 {
+  /*module benefits*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 400%;
+  max-width: 800px;
+  margin: 20px 20px;
+  border: 2px #f0645a solid;
+  background-color: #d1bfbf;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.section1 {
+  /*module benefits*/
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.foto1 {
+  width: 35%; /*module benefits*/
+  border: 2px #f0645a solid;
+  border-radius: 30px;
+}
+.content2 {
+  /*module benefits*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 400%;
+  max-width: 800px;
+  margin: 20px 20px;
+  border: 2px #f0645a solid;
+  background-color: #d1bfbf;
+  padding: 10px;
+  border-radius: 30px;
+}
+.section2 {
+  /*module benefits*/
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+.foto2 {
+  /*module benefits*/
+  width: 30vh;
+  height: 30vh;
+  border: 2px #f0645a solid;
+  border-radius: 30px;
+}
+
+.rating {
+  /*module benefits*/
+  display: flex;
+}
+
+.star {
+  /*module benefits*/
+
+  font-size: 2em;
+  color: gold;
+  padding: 0 5px;
+}
+
+h1,
+h2 {
+  color: #131212;
+}
+
+.table-container {
+  /*module information*/
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #d93636;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px 0;
+}
+
+.table-row {
+  /*modolo information*/
+  display: flex;
+}
+
+.table-cell {
+  /*modolo information*/
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cf1010;
+  text-align: center;
+}
+
+.table-header .table-cell {
+  /*modolo information*/
+  font-weight: bold;
+  background-color: #ff6f6f;
+}
+
+h1 {
+  color: var(rgb(216, 8, 8));
+  margin: 4px 5px;
+}
+
+.image-banner img {
+  width: 95%;
+  height: 300px; /* Fixed height for the banner image */
+  border-radius: 15px;
+  object-fit: cover; /* Ensure the image covers the entire area */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  color: var(--text-color);
+  margin: 5px 0;
+}
+.uno {
+  position: absolute;
+  top: 50px;
+  left: 60%;
+}
+.dos {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+}
+.tres {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+}
+
+.image1 img {
+  width: 30%;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
+}
+
+.image-item {
+  width: 18%;
+  height: 180px;
+  border-radius: 40px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contact {
+  width: 40%;
+  height: 200%;
+  border-radius: 40px;
+}
+footer {
+  align-self: hover;
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
