@@ -194,9 +194,9 @@ h1 {
 
 .image-banner img {
   width: 95%;
-  height: 300px; /* Fixed height for the banner image */
+  height: 300px; 
   border-radius: 15px;
-  object-fit: cover; /* Ensure the image covers the entire area */
+  object-fit: cover; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
