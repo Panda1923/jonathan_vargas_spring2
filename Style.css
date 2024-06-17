@@ -12,22 +12,21 @@
 
 header {
   background-color: var(--primary-color);
-  padding: 10px 20px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  top: 0;
+  padding: 10px;
+  min-height: 8vh;
   z-index: 1000;
 }
 
 header .logo {
   display: flex;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1;
   font-weight: bold;
-  color: white;
 }
 
 header .logo img {
@@ -67,27 +66,37 @@ nav ul li a.active {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   background-color: #ffe0e0;
-  text-align: center;
-  padding: 80px;
+  min-width: 100vh;
+  height: 87vh;
 }
+
+h1,
+h2 {
+  color: #131212;
+  text-align: center;
+}
+
+p {
+  color: var(--text-color);
+  margin: 5px 0;
+  text-align: center;
+}
+
 .main3 {
   /*module information*/
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 250px;
 }
+
 .main5 {
   /*module benefits*/
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .content1 {
   /*module benefits*/
   display: flex;
@@ -108,11 +117,14 @@ main {
   top: 30%;
   left: 50%;
 }
+
 .foto1 {
-  width: 35%; /*module benefits*/
+  /*module benefits*/
+  width: 35%;
   border: 2px #f0645a solid;
   border-radius: 30px;
 }
+
 .content2 {
   /*module benefits*/
   display: flex;
@@ -126,12 +138,14 @@ main {
   padding: 10px;
   border-radius: 30px;
 }
+
 .section2 {
   /*module benefits*/
   position: absolute;
   top: 60%;
   left: 50%;
 }
+
 .foto2 {
   /*module benefits*/
   width: 30vh;
@@ -153,28 +167,23 @@ main {
   padding: 0 5px;
 }
 
-h1,
-h2 {
-  color: #131212;
-}
-
 .table-container {
   /*module information*/
   display: flex;
   flex-direction: column;
   border: 5px solid #d93636;
-  width: 80%;
+  width: 100%;
   max-width: 800px;
-  margin: 20px 0;
+  margin: 10% 0;
 }
 
 .table-row {
-  /*modolo information*/
+  /*module information*/
   display: flex;
 }
 
 .table-cell {
-  /*modolo information*/
+  /*module information*/
   flex: 1;
   padding: 10px;
   border: 1px solid #cf1010;
@@ -182,54 +191,54 @@ h2 {
 }
 
 .table-header .table-cell {
-  /*modolo information*/
+  /*module information*/
   font-weight: bold;
   background-color: #ff6f6f;
 }
 
-h1 {
-  color: var(rgb(216, 8, 8));
-  margin: 4px 5px;
-}
-
-.image-banner img {
-  width: 95%;
-  height: 300px; 
+.image-banner img { 
+  /*module index*/
+  position: relative;
+  left: 10%;
+  width: 80%;
+  height: 300px;
   border-radius: 15px;
-  object-fit: cover; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
-p {
-  color: var(--text-color);
-  margin: 5px 0;
+.image1 img { 
+  /*module index*/
+  position: relative;
+  left: 30%;
+  width: 40%;
+  height: 300px;
+  border-radius: 15px;
 }
+
 .uno {
+  /*module AboutUs*/
   position: absolute;
   top: 50px;
   left: 60%;
 }
+
 .dos {
+  /*module AboutUs*/
   position: absolute;
   top: 40%;
   left: 60%;
 }
+
 .tres {
+  /*module AboutUs*/
   position: absolute;
   top: 80%;
   left: 60%;
 }
 
-.image1 img {
-  width: 30%;
-  height: 200px;
-  border-radius: 15px;
-  object-fit: cover;
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 .image-section {
+  /*module AboutUs*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -239,26 +248,33 @@ p {
 }
 
 .image-item {
+  /*module AboutUs*/
   width: 18%;
   height: 180px;
   border-radius: 40px;
   object-fit: cover;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .contact {
-  width: 40%;
+  /*module contact*/
+  position: relative;
+  left: 25%;
+  width: 48%;
   height: 200%;
   border-radius: 40px;
+  object-fit: cover;
 }
+form{
+
+}
+
 footer {
   align-self: hover;
   background-color: var(--primary-color);
-  padding: 10px 0;
   text-align: center;
-  color: white;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  position: sticky;
+  min-height: 5vh;
+
 }
 
 .whatsapp {
