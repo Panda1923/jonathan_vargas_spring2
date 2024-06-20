@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raffle</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./ResourcesElevemosElEstilo/favicon.png"
-    />
-    <link rel="stylesheet" href="./Style.css" />
-  </head>
-
-  <body>
-    <div class="layout">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raffle</title>
+  <link rel="icon" type="image/x-icon" href="./ResourcesElevemosElEstilo/favicon.png"/>
+  <link rel="stylesheet" href="./Style.css"/>
+</head>
+<body>
+  <div class="layout">
     <header>
       <div class="logo">
-        <img src="./ResourcesElevemosElEstilo/icon.png" alt="Logo" />
+        <img src="./ResourcesElevemosElEstilo/icon.png" alt="Logo"/>
         <h1>Frozen Cream</h1>
       </div>
       <nav>
@@ -31,80 +26,57 @@
       </nav>
     </header>
     <main>
-      <div>
         <h1>Raffle</h1>
-        <h3>
-          <u
-            >You can collaborate to hold an exhibition event and participate in
-            a raffle to win an easel</u
-          >
-        </h3>
-      </div>
-      <form action="/show_data.html" method="get">
-        <label for="name">
+        <h2>
+          <u>You can collaborate to hold an exhibition event and participate
+            in a raffle to win an easel
+          </u>
+        </h2>
+      <div class="form">
+        <form action="./show_data.html" method="get">
+         <fieldset>
+          <label for="name">
           name
-          <input type="text" name="name" placeholder="Your name" id="name" />
+          <input type="text" name="name" placeholder="Your name" id="name"/>
         </label>
-
         <label for="Lastname">
           Lastname
-          <input
-            type="text"
-            name="Lastname"
-            placeholder="Your Lastname"
-            id="Lastname"
-          />
+          <input type="text" name="Lastname" placeholder="Your Lastname" id="Lastname"/>
         </label>
-        <label for="Choose-meet-o-zoom"> Choose meet o zoom </label>
-        <input
-          list="Choose-meet-o-zoom"
-          id="Choose-meet-o-zoomm"
-          name="Choose-meet-o-zoom"
-        />
-        <datalist id="Choose-meet-o-zoom">
-          <option value="meet"></option>
-          <option value="zoom"></option>
-        </datalist>
-        <label for="date"> Date </label>
-        <input type="date" id="date" name="date" />
-        <label for=""> Payment Options </label>
-        <label for="Cash"> Cash </label>
-        <input type="radio" id="Cash" name="Payment" value="Cash" />
-        <label for="Cash"> Credit Card </label>
-        <input
-          type="radio"
-          id="Credit_Card"
-          name="Payment"
-          value="Credit_Card"
-        />
-        <label for="Cash"> Debit Card </label>
-        <input type="radio" id="Debit_Card" name="Payment" value="Debit_Card" />
-        <label for="Message_{optional}"> Message {optional} </label>
-        <input
-          type="textarea"
-          cols="30"
-          rows="10"
-          id="Message_{optional}"
-          name="Message_{optional}"
-          placeholder="Message"
-        />
-        <label for="accept_terms"> I accept terms and conditions... </label>
-        <input type="checkbox" id="accept_terms" name="accept_terms" />
-
-        <input type="button" value="Send" />
-      </form>
+          <label for="choose_meet_zoom">Choose meet o zoom</label>
+          <input list="choose" id="choose_meet_zoom" name="choose_meet_zoom"/>
+          <datalist id="choose">
+            <option value="meet"></option>
+            <option value="zoom"></option>
+          </datalist>
+          <label for="date"> Date </label>
+          <input type="date" id="date" name="date" value="2024-06-19"/>
+          <label>Payment Options</label>
+          <label for="Cash"> Cash </label>
+          <input type="radio" id="Cash" name="payment" value="Cash"/>
+          <label for="Cash"> Credit Card </label>
+          <input type="radio" id="Credit_Card" name="payment" value="Credit_Card"/>
+          <label for="Cash"> Debit Card </label>
+          <input type="radio" id="Debit_Card" name="payment" value="Debit_Card"/>
+          <label for="textarea"> Message {optional} </label> 
+          <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+          <label for="confir"> I accept terms and conditions... </label>
+          <input type="checkbox" id="confir" name="confir" required value="123"/>
+          <button>submit</button>
+        </fieldset>
+        </form>
+        <section>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26610.38655719748!2d-118.24136173403781!3d34.05137722020076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e1!3m2!1ses!2sco!4v1718839700425!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+      </div>
     </main>
     <footer>
-        <p class="pf">Jonathan Vargas Hurtado</p>
-      </footer>
-    <a class="whatsapp" href="whatsap" target="_blank">
-      <img src="./ResourcesElevemosElEstilo/whatsappicon.png" alt="WhatsApp" />
-    </a>
-<<<<<<< HEAD:Raffle.html
-</div>
-  </body>
-=======
+      <p class="pf">Jonathan Vargas Hurtado</p>
+  </footer>
+  <a class="whatsapp" href="whatsap" target="_blank">
+      <img src="./ResourcesElevemosElEstilo/whatsappicon.png" alt="WhatsApp">
+  </a>
+  </div>
 </body>
 
->>>>>>> 81382c54fe0da6d29c22cc566a5a234fd84b2574:raffle.html
 </html>

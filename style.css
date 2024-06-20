@@ -63,7 +63,7 @@ nav ul li a {
 }
 
 h1,
-h2 {
+h2,h3 {
   color: #131212;
   text-align: center;
 }
@@ -104,7 +104,7 @@ p {
   
 }
 
-.foto1 {
+.imag1-5 {
   /*module benefits*/
   width: 30vh;
   height: 30vh;
@@ -113,7 +113,7 @@ p {
   object-fit: cover;
 }
 
-.foto2 {
+.imag2-5 {
   /*module benefits*/
   width: 30vh;
   height: 30vh;
@@ -138,14 +138,45 @@ p {
 .container{
   /*module information*/
   padding: 50px;
+  width: 60%;
+  position: relative;
+  left: 20%;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  gap: px;
+
   
 }
 table,tr,td, th{
+  /*module information*/
   border: 1px solid var(--highlight-color);
+}
+table{
+  /*module information*/
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+  
+}
+th{
+  /*module information*/
+  padding: 2%;
+  background-color: var(--primary-color)
+}
+td {
+  /*module information*/
+  padding: 8%;
+}
+.col1{
+  /*module information*/
+  width: 5%;
+}
+.col2{
+  /*module information*/
+  width: 5%;
+}
+.col3{
+  /*module information*/
+  width: 5%;
 }
 .image-banner img {
   /*module index*/
@@ -217,6 +248,33 @@ table,tr,td, th{
 }
 
 form {
+display: flex;
+flex-direction: column;
+align-items: center;
+position: absolute;
+left: 80rem;
+margin: 2rem;
+max-width: 50vw; 
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+section{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 20rem;
+  top: 10rem;
+  padding: 5rem;
+}
+  
+fieldset{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: flex-start;
+  gap: 0.3rem;
 
 }
 .pf {
@@ -227,9 +285,9 @@ form {
 .whatsapp {
   /*module footer*/
   position: absolute;
-  bottom: 70px;
+  bottom: 10px;
   right: 20px;
-  width: 60px;
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -241,3 +299,16 @@ form {
   height: 100%;
   border-radius: 50%;
 }
+/*responsive*/
+/*- Mobile : From 320px to 768px.*/
+
+
+
+
+/* - Tablet : From 768px to 1024px. */
+
+
+
+
+
+/* - Notebook/Pc : 1024px onwards. */
