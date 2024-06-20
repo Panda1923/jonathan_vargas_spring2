@@ -85,15 +85,16 @@ p {
 .content1 {
   /*module benefits*/
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border: 2px #f0645a solid;
+  border: 0.1vw #f0645a solid;
   background-color: #d1bfbf;
   padding: 1vw;
   border-radius: 2vw;
   width: 50vw;
   object-fit: cover;
-  height: 15vw;
+  margin: 1vw;
  
 }
 
@@ -101,14 +102,16 @@ p {
   /*module benefits*/
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border: 2px #f0645a solid;
+  border: 0.1vw #f0645a solid;
   background-color: #d1bfbf;
   padding: 1vw;
   border-radius: 2vw;
   width: 50vw;
   object-fit: cover;
+  margin: 1vw;
 
 
   
@@ -116,8 +119,8 @@ p {
 
 .imag1-5 {
   /*module benefits*/
-  width: 30vh;
-  height: 30vh;
+  width: 10vw;
+  height: 10vw;
   border: 2px #f0645a solid;
   border-radius: 30px;
   object-fit: cover;
@@ -125,8 +128,8 @@ p {
 
 .imag2-5 {
   /*module benefits*/
-  width: 30vh;
-  height: 30vh;
+  width: 10vw;
+  height: 15vw;
   border: 2px #f0645a solid;
   border-radius: 30px;
   object-fit: cover;
@@ -318,6 +321,12 @@ fieldset{
   left: 5vw ;
 }
  /*benefits*/
+ .content1{
+flex-direction: column;
+ }
+.content2{
+  flex-direction: column;
+}
 
 
 } 
